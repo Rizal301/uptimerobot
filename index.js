@@ -1,7 +1,7 @@
 const axios = require("axios")
-const urls = ["https://lilybot-music.glitch.me"]
+const urls = ["https://glitch.com/edit/#!/lilybot-music"]
 setInterval(function() {
             urls.forEach(url => {
             axios.get(url).then(console.log("Pong at " + Date.now())).catch(() => {});
         })
-    }, 60 * 100);
+    }, 60 * 1000);
